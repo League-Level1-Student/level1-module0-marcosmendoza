@@ -53,16 +53,16 @@ if( color.equals("blue")) {
 	}
 		// 9. remove the component from the quiz window (you may not see the
 		// effect of this until step 12)
-
+    quizWindow.remove(image1);
 		// 10. find another image and create it (might take more than one line
 		// of code)
-
+    String image2 = "https://cdn.thedailymash.co.uk/wp-content/uploads/20190808104736/earth-2.jpg";
 		// 11. add the second image to the quiz window
-
-		// 12. pack the quiz window
-
+    quizWindow.add(image2);
+	// 12. pack the quiz window
+quizWindow.pack();
 		// 13. ask another question
-
+JOptionPane.showInputDialog("what is the most populated country on earth");
 		// 14+ check answer, say if correct or incorrect, etc.
 	}
 	
