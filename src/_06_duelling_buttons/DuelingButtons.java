@@ -11,6 +11,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class DuelingButtons implements ActionListener {
@@ -27,13 +28,16 @@ public class DuelingButtons implements ActionListener {
 	public void run() {
 
 		// 1. Add the panel to the frame
+frame.add(panel);
 
 		// 2. Make the frame visible
-
+frame.setVisible(true);
 		// 3. Set the text of the leftButton to "Click me!"
-
+JButton leftButton = new JButton();
+JLabel label = new JLabel();
+label.setText("click me.");
 		// 4. Set the text of the rightButton to "Click me!"
-
+label.setText("click me.");
 		// 5. Add an action listener to the leftButton
 
 		// 6. Add an action listener to the rightButton
@@ -44,6 +48,9 @@ public class DuelingButtons implements ActionListener {
 
 		// 9. Pack the frame
 
+//
+///
+////
 		// 10. Set the title of the frame to "Demanding Buttons"
 
 	}
