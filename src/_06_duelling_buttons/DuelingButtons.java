@@ -43,11 +43,11 @@ label.setText("click me.");
 		// 6. Add an action listener to the rightButton
 
 		// 7. Add the leftButton to the panel
-
+panel.add(leftButton);
 		// 8. Add the rightButton to the panel
-
+panel.add(rightButton);
 		// 9. Pack the frame
-
+frame.pack(); 
 //
 ///
 ////
