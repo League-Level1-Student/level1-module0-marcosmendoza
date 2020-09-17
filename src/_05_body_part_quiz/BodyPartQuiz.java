@@ -57,14 +57,31 @@ public class BodyPartQuiz {
 		// 4. Ask the user who this person is and store their answer
 		String guess = JOptionPane.showInputDialog("who is this?");
 
+		
+			if(guess == "arnold"); {
+				
+				JOptionPane.showMessageDialog(null, "You are CORRECT! +1 POINT!");
+				
+				JOptionPane.showMessageDialog(null, "You have 1 points");
+				
+			}
+			
+			
+			
+			
+			
+			
+			 { 
+				
+			}
 		// 5. Check their answer. If they guessed correctly:
 		// -- Tell them they are right and increase the score by 1
 
 		// 6. Otherwise:
 		// -- Tell them they are wrong and who the person is
-
+			
 		// 7. Use the showNextImage() method below to get the next image
-		showNextImage();
+		showNextImage(); 
 
 		// 8. .... repeat 4-7 for all your images.....
 
@@ -105,3 +122,4 @@ public class BodyPartQuiz {
 		return new JLabel();
 	}
 }
+
