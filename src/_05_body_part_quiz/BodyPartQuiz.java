@@ -55,6 +55,13 @@ public class BodyPartQuiz {
 		// 2. Set the size of the window in the initializeGui() method 
 
 		// 4. Ask the user who this person is and store their answer
+		
+		
+		int score = 0;
+		
+		
+			
+		
 		String guess = JOptionPane.showInputDialog("who is this?");
 
 		
@@ -62,18 +69,26 @@ public class BodyPartQuiz {
 				
 				JOptionPane.showMessageDialog(null, "You are CORRECT! +1 POINT!");
 				
-				JOptionPane.showMessageDialog(null, "You have 1 points");
+				score +=1;
+				
+				JOptionPane.showMessageDialog(null, "You have this amount of points:"+score);
+				
+				 
+			}
+			
+			String guess2 = JOptionPane.showInputDialog("Who is THIS?") ;
+			
+			if(guess2.equals("Leonardo")) {
+			
+				JOptionPane.showMessageDialog(null, "You are CORRECT! +1 POINT!");
+				
+				score +=1;
+				
+				JOptionPane.showMessageDialog(null, "You have this amount of points:"+score);
 				
 			}
 			
 			
-			
-			
-			
-			
-			 { 
-				
-			}
 		// 5. Check their answer. If they guessed correctly:
 		// -- Tell them they are right and increase the score by 1
 
