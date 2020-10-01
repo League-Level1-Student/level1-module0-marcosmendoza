@@ -24,7 +24,7 @@ public class BodyPartQuiz {
 	String firstImage = "src/_05_body_part_quiz/arnold.jpeg";
 	String secondImage = "src/_05_body_part_quiz/leonardo.jpeg";
 	String thirdImage = "src/_05_body_part_quiz/morgan.jpeg";
-	String fourthImage = "src/_05_body_part_quiz/pac.jpeg";
+	String fourthImage = "src/_05_body_part_quiz/pac.jpeg.png";
 
 	JFrame window = new JFrame();
 	JPanel panel = new JPanel();
@@ -107,6 +107,16 @@ public class BodyPartQuiz {
 			
 			showNextImage();
 			
+			String guess4 = JOptionPane.showInputDialog("Who is THIS?");
+			
+			if(guess3.equalsIgnoreCase("Tupac")) {
+			
+				JOptionPane.showMessageDialog(null, "You are CORRECT! +1 POINT!");
+				
+				score +=1;
+				
+				
+			}
 			
 			
 			
