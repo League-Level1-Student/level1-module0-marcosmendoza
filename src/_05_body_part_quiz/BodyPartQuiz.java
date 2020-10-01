@@ -24,7 +24,7 @@ public class BodyPartQuiz {
 	String firstImage = "src/_05_body_part_quiz/arnold.jpeg";
 	String secondImage = "src/_05_body_part_quiz/leonardo.jpeg";
 	String thirdImage = "src/_05_body_part_quiz/morgan.jpeg";
-	String fourthImage = "src/_05_body_part_quiz/jack.jpeg";
+	String fourthImage = "src/_05_body_part_quiz/pac.jpeg";
 
 	JFrame window = new JFrame();
 	JPanel panel = new JPanel();
@@ -65,7 +65,7 @@ public class BodyPartQuiz {
 		String guess = JOptionPane.showInputDialog("who is this?");
 
 		
-			if(guess == "arnold"); {
+			if(guess.equalsIgnoreCase("Arnold")) {
 				
 				JOptionPane.showMessageDialog(null, "You are CORRECT! +1 POINT!");
 				
@@ -76,9 +76,13 @@ public class BodyPartQuiz {
 				 
 			}
 			
+			showNextImage();
+			
 			String guess2 = JOptionPane.showInputDialog("Who is THIS?") ;
 			
-			if(guess2.equals("Leonardo")) {
+			
+			
+			if(guess2.equalsIgnoreCase("Leonardo")) {
 			
 				JOptionPane.showMessageDialog(null, "You are CORRECT! +1 POINT!");
 				
@@ -88,6 +92,25 @@ public class BodyPartQuiz {
 				
 			}
 			
+			showNextImage();
+			
+			String guess3 = JOptionPane.showInputDialog("Who is THIS?");
+			
+			if(guess3.equalsIgnoreCase("Morgan")) {
+			
+				JOptionPane.showMessageDialog(null, "You are CORRECT! +1 POINT!");
+				
+				score +=1;
+				
+				
+			}
+			
+			showNextImage();
+			
+			
+			
+			
+			
 			
 		// 5. Check their answer. If they guessed correctly:
 		// -- Tell them they are right and increase the score by 1
@@ -96,7 +119,7 @@ public class BodyPartQuiz {
 		// -- Tell them they are wrong and who the person is
 			
 		// 7. Use the showNextImage() method below to get the next image
-		showNextImage(); 
+		
 
 		// 8. .... repeat 4-7 for all your images.....
 
