@@ -1,4 +1,4 @@
-package _05_body_part_quiz;
+ package _05_body_part_quiz;
 
 /*
  *    Copyright (c) The League of Amazing Programmers 2013-2019
@@ -116,12 +116,22 @@ public class BodyPartQuiz {
 				score +=1;
 				
 				
+				
+				
 			}
 			
 			
 			
+			JOptionPane.showMessageDialog(null, "You got all 4 questions right! Get ready for the next quiz!");
+			
+			showNextImage();
+			
+			String guess5 = JOptionPane.showInputDialog("Whos is THIS?");
+			
+			if(guess5.equalsIgnoreCase("Tupac")) {
 			
 			
+			}
 		// 5. Check their answer. If they guessed correctly:
 		// -- Tell them they are right and increase the score by 1
 
