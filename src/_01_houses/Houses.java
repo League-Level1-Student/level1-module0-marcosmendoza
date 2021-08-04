@@ -92,6 +92,8 @@ rob.move(5);
 rob.turn(-15);
 rob.move(1);
 rob.moveTo(150, 550);
+
+rob.moveTo(400,500);
 	
 	}
 	public void run() {
